@@ -723,8 +723,8 @@ footer p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   border: 1px solid rgba(17, 17, 17, 0.16);
   background: rgba(255, 255, 255, 0.96);
   color: var(--ink);
@@ -855,7 +855,14 @@ footer p {
   }
 
   .profile-panel {
-    display: none;
+    display: block;
+    padding-top: 0;
+    order: -1;
+  }
+
+  .profile-photo {
+    max-width: 132px;
+    margin-inline: auto;
   }
 
   .section {
@@ -880,8 +887,8 @@ footer p {
   .back-to-top {
     right: 16px;
     bottom: 16px;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
   }
 }
 
