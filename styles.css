@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 74px;
 }
 
 body {
@@ -67,9 +68,13 @@ dd,
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: var(--page);
   border-top: 4px solid var(--accent);
   border-bottom: 1px solid var(--rule);
+  box-shadow: 0 1px 0 rgba(17, 17, 17, 0.05);
 }
 
 .nav {
