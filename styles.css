@@ -858,8 +858,10 @@ footer p {
   }
 
   .nav {
+    position: relative;
     min-height: auto;
     padding-block: 11px;
+    padding-right: 76px;
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
@@ -867,9 +869,14 @@ footer p {
 
   .nav-actions {
     width: 100%;
+    display: block;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 10px;
+  }
+
+  .language-switch {
+    position: absolute;
+    top: 13px;
+    right: 0;
   }
 
   .nav-links {
@@ -879,6 +886,10 @@ footer p {
 
   .nav-links a {
     padding-inline: 8px;
+  }
+
+  .nav-links a:first-child {
+    padding-left: 0;
   }
 
   .hero {
