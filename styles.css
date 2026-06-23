@@ -181,10 +181,6 @@ h2 {
   display: inline;
 }
 
-.mobile-name-break {
-  display: none;
-}
-
 h3 {
   margin: 0 0 8px;
   font-size: 1.04rem;
@@ -843,8 +839,8 @@ footer p {
 
   .hero-copy {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 112px;
-    column-gap: 16px;
+    grid-template-columns: minmax(0, 1fr) 96px;
+    column-gap: 12px;
     align-items: center;
   }
 
@@ -860,16 +856,13 @@ footer p {
   h1 {
     grid-column: 1;
     grid-row: 3;
-    font-size: 2.05rem;
+    font-size: 1.82rem;
     margin: 6px 0 10px;
+    white-space: nowrap;
   }
 
   .hero-name-part {
-    display: block;
-  }
-
-  .mobile-name-break {
-    display: block;
+    display: inline;
   }
 
   h2 {
@@ -899,7 +892,7 @@ footer p {
     grid-row: 3 / span 2;
     justify-self: end;
     align-self: start;
-    width: 112px;
+    width: 96px;
     max-width: 100%;
     height: auto;
     margin: 0 0 12px;
@@ -952,6 +945,6 @@ footer p {
 
 @media (max-width: 420px) {
   h1 {
-    font-size: 2.34rem;
+    font-size: 1.72rem;
   }
 }
