@@ -181,6 +181,10 @@ h2 {
   display: inline;
 }
 
+.mobile-name-break {
+  display: none;
+}
+
 h3 {
   margin: 0 0 8px;
   font-size: 1.04rem;
@@ -861,6 +865,10 @@ footer p {
   }
 
   .hero-name-part {
+    display: block;
+  }
+
+  .mobile-name-break {
     display: block;
   }
 
