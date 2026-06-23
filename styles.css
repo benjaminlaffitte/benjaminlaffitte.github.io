@@ -164,7 +164,7 @@ h4 {
 h1 {
   margin: 7px 0 12px;
   font-family: var(--serif);
-  font-size: 3.45rem;
+  font-size: 3.12rem;
   line-height: 1.02;
   font-weight: 400;
 }
@@ -172,9 +172,13 @@ h1 {
 h2 {
   margin: 0 0 20px;
   font-family: var(--serif);
-  font-size: 2.55rem;
+  font-size: 2.3rem;
   line-height: 1.08;
   font-weight: 400;
+}
+
+.hero-name-part {
+  display: inline;
 }
 
 h3 {
@@ -224,8 +228,8 @@ h4 {
   font-weight: 700;
 }
 
-.profile-photo-inline {
-  display: none;
+.hero-copy > .profile-photo-inline {
+  display: none !important;
 }
 
 .profile-panel {
@@ -770,11 +774,11 @@ footer p {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   h2 {
-    font-size: 2.18rem;
+    font-size: 2rem;
   }
 
   .hero {
@@ -833,16 +837,35 @@ footer p {
     gap: 18px;
   }
 
+  .hero-copy {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 112px;
+    column-gap: 16px;
+    align-items: center;
+  }
+
   .hero-copy::before {
+    grid-column: 1 / -1;
     margin-bottom: 10px;
   }
 
+  .eyebrow {
+    grid-column: 1 / -1;
+  }
+
   h1 {
-    font-size: 2.34rem;
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 2.05rem;
+    margin: 6px 0 10px;
+  }
+
+  .hero-name-part {
+    display: block;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .intro,
@@ -862,12 +885,30 @@ footer p {
     font-size: 1.28rem;
   }
 
-  .profile-photo-inline {
-    display: block;
-    width: 132px;
+  .hero-copy > .profile-photo-inline {
+    display: block !important;
+    grid-column: 2;
+    grid-row: 3 / span 2;
+    justify-self: end;
+    align-self: start;
+    width: 112px;
     max-width: 100%;
     height: auto;
-    margin: 6px 0 18px;
+    margin: 0 0 12px;
+  }
+
+  .intro {
+    grid-column: 1;
+    grid-row: 4;
+    margin-bottom: 0.75rem;
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+
+  .hero-meta,
+  .research-keywords,
+  .hero-links {
+    grid-column: 1 / -1;
   }
 
   .profile-panel {
