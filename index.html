@@ -387,6 +387,7 @@
       <p>&copy; Benjamin Laffitte. Assistant Professor, Chengdu University of Technology.</p>
     </div>
   </footer>
+  <button type="button" class="back-to-top" aria-label="Back to top" data-back-to-top>↑</button>
   <script>
     const scrollSlider = (slider, direction) => {
       const firstItem = slider.querySelector("article, figure");
@@ -410,6 +411,21 @@
         button.addEventListener("click", () => scrollSlider(slider, direction));
       }
     });
+
+    const backToTopButton = document.querySelector("[data-back-to-top]");
+
+    if (backToTopButton) {
+      const updateBackToTop = () => {
+        backToTopButton.classList.toggle("is-visible", window.scrollY > 520);
+      };
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      updateBackToTop();
+      window.addEventListener("scroll", updateBackToTop, { passive: true });
+    }
   </script>
 </body>
 </html>
