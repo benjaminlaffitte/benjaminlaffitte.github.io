@@ -927,6 +927,7 @@ footer p {
     grid-column: 1;
     grid-row: 3;
     font-size: 1.82rem;
+    -webkit-text-stroke: 0.14px currentColor;
     margin: 6px 0 10px;
     white-space: nowrap;
   }
@@ -937,6 +938,7 @@ footer p {
 
   h2 {
     font-size: 1.75rem;
+    -webkit-text-stroke: 0.12px currentColor;
   }
 
   .intro,
