@@ -209,7 +209,7 @@ h1 {
   font-family: var(--serif);
   font-size: 3.12rem;
   line-height: 1.02;
-  font-weight: 460;
+  font-weight: 500;
 }
 
 h2 {
@@ -217,7 +217,7 @@ h2 {
   font-family: var(--serif);
   font-size: 2.3rem;
   line-height: 1.08;
-  font-weight: 460;
+  font-weight: 500;
 }
 
 .hero-name-part {
