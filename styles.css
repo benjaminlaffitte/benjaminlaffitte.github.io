@@ -861,7 +861,6 @@ footer p {
     position: relative;
     min-height: auto;
     padding-block: 11px;
-    padding-right: 76px;
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
@@ -885,7 +884,13 @@ footer p {
   }
 
   .nav-links a {
-    padding-inline: 8px;
+    font-size: 0.84rem;
+    padding-inline: 5px;
+  }
+
+  .nav-links a + a::before {
+    width: 2px;
+    height: 2px;
   }
 
   .nav-links a:first-child {
