@@ -236,9 +236,13 @@ h4 {
   line-height: 1.35;
 }
 
-.intro,
-.lead {
+.intro {
   max-width: 760px;
+  font-size: 1.06rem;
+  line-height: 1.55;
+}
+
+.lead {
   font-size: 1.06rem;
   line-height: 1.55;
 }
