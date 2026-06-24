@@ -209,7 +209,7 @@ h1 {
   font-family: var(--serif);
   font-size: 3.12rem;
   line-height: 1.02;
-  font-weight: 500;
+  font-weight: 499;
 }
 
 h2 {
@@ -939,6 +939,14 @@ footer p {
   h2 {
     font-size: 1.75rem;
     -webkit-text-stroke: 0.12px currentColor;
+  }
+
+  :lang(en) h1 {
+    -webkit-text-stroke: 0.18px currentColor;
+  }
+
+  :lang(en) h2 {
+    -webkit-text-stroke: 0.16px currentColor;
   }
 
   .intro,
